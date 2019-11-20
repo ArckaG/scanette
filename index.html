@@ -29,6 +29,14 @@
     <script src="js/job.js"></script>
     <!-- library for reading barcodes -->
     <script src="js/app.js" defer></script>
+    
+    <script> 
+        window.onload=function(){
+            if('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('./ServiceWorker.js');
+            };
+        }
+    </script>
    
     <!-- link manifest -->
     <link rel="manifest" href="./manifest.json">    
