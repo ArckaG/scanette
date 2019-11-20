@@ -1,13 +1,11 @@
-
-
 var cacheName = 'ScanettePWA';
 var contentToCache = [
-
   './index.html',
   './js/',
   './js/app.js',
   './produits.csv',
   './style.css',
+  './images/',
   './icons/icon-32.png',
   './icons/icon-64.png',
   './icons/icon-96.png',
