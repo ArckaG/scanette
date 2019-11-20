@@ -1,14 +1,12 @@
-self.addEventListener('install', (e) => {
-    console.log('[Service Worker] Install');
-});
+
 
 var cacheName = 'ScanettePWA';
 var contentToCache = [
-  './',
+
   './index.html',
   './js/',
   './js/app.js',
-  './produits.csv'
+  './produits.csv',
   './style.css',
   './icons/icon-32.png',
   './icons/icon-64.png',
@@ -20,7 +18,6 @@ var contentToCache = [
   './icons/icon-512.png'
 ];
 
-var contentToCache = appShellFiles.concat(gamesImages);
 self.addEventListener('install', (e) => {
   console.log('[Service Worker] Install');
   e.waitUntil(
